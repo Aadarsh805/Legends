@@ -20,6 +20,14 @@ export const item = {
   },
 };
 
+export const item2 = {
+  hidden: { opacity: 0, y: "50%" },
+  show: {
+    opacity: 1,
+    y: "0%",
+  },
+};
+
 export const fromLeft = {
   hidden: { opacity: 0, y: "5%" },
   show: {
