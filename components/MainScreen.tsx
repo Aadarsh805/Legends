@@ -20,7 +20,7 @@ function MainScreen() {
         initial="hidden"
         animate="show"
         transition={{ ease: "easeInOut" }}
-        className="bg-[url('../public/107.png')] bg-black min-h-[100vh] bg-no-repeat bg-contain bg-right-top "
+        className="bg-[url('../public/107.png')] bg-black min-h-[100vh] bg-no-repeat bg-contain bg-right-top oveflow-x-hidden"
       >
         <div className="text-white max-w-[45vw] h-[80vh] flex items-center justify-center px-[7rem]">
           <div className="flex flex-col gap-8 justify-center mt-44">
@@ -59,105 +59,107 @@ function MainScreen() {
             </div>
           </div>
         </div>
-        <motion.div
-          initial={{ x: "50%", opacity: 0 }}
-          whileInView={{ x: "0%", opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-white w-full flex items-center gap-72 px-52 py-72"
-        >
+        <div className=" overflow-x-hidden">
           <motion.div
-            className="flex flex-col gap-5 w-fit "
-            variants={fromLeft}
-            initial="hidden"
-            whileInView="show"
-            transition={{ ease: "easeInOut", delay: 1 }}
-          >
-            <motion.h2
-              variants={itemFromLeft}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="text-[3rem] leading-[3rem] font-semibold max-w-[24vw]"
-            >
-              Synergy of light update is live now
-            </motion.h2>
-            <motion.p
-              variants={itemFromLeft}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="text-gray-200 text-lg max-w-[30vw]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a
-              dolores sapiente placeat accusamu.
-            </motion.p>
-            <div className="flex items-center gap-6">
-              <motion.button
-                variants={itemFromLeft}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                className="bg-[#4521f3] px-5 text-lg uppercase font-bold mt-1 py-3 border border-[#4521f3] rounded-md w-fit"
-              >
-                Play Now
-              </motion.button>
-              <motion.button
-                variants={itemFromLeft}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                className=" text-lg uppercase px-5 font-bold py-3 border border-[#4521f3] rounded-lg"
-              >
-                Learn More
-              </motion.button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="flex items-center gap-16 h-fit "
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            transition={{ ease: "easeInOut", delay: 2 }}
+            initial={{ x: "50%", opacity: 0 }}
+            whileInView={{ x: "0%", opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-white w-full flex items-center gap-72 px-52 py-72"
           >
             <motion.div
-              variants={item}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900 mt-[2rem] "
+              className="flex flex-col gap-5 w-fit "
+              variants={fromLeft}
+              initial="hidden"
+              whileInView="show"
+              transition={{ ease: "easeInOut", delay: 1 }}
             >
-              <Image
-                src={symbol2}
-                alt="water symbol"
-                className="rounded-full w-20"
-              />
+              <motion.h2
+                variants={itemFromLeft}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="text-[3rem] leading-[3rem] font-semibold max-w-[24vw]"
+              >
+                Synergy of light update is live now
+              </motion.h2>
+              <motion.p
+                variants={itemFromLeft}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="text-gray-200 text-lg max-w-[30vw]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a
+                dolores sapiente placeat accusamu.
+              </motion.p>
+              <div className="flex items-center gap-6">
+                <motion.button
+                  variants={itemFromLeft}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  className="bg-[#4521f3] px-5 text-lg uppercase font-bold mt-1 py-3 border border-[#4521f3] rounded-md w-fit"
+                >
+                  Play Now
+                </motion.button>
+                <motion.button
+                  variants={itemFromLeft}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  className=" text-lg uppercase px-5 font-bold py-3 border border-[#4521f3] rounded-lg"
+                >
+                  Learn More
+                </motion.button>
+              </div>
             </motion.div>
             <motion.div
-              variants={item}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900"
+              className="flex items-center gap-16 h-fit "
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              transition={{ ease: "easeInOut", delay: 2 }}
             >
-              <Image
-                src={symbol1}
-                alt="water symbol"
-                className="rounded-full w-20"
-              />
-            </motion.div>
+              <motion.div
+                variants={item}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900 mt-[2rem] "
+              >
+                <Image
+                  src={symbol2}
+                  alt="water symbol"
+                  className="rounded-full w-20"
+                />
+              </motion.div>
+              <motion.div
+                variants={item}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900"
+              >
+                <Image
+                  src={symbol1}
+                  alt="water symbol"
+                  className="rounded-full w-20"
+                />
+              </motion.div>
 
-            <motion.div
-              variants={item}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900 mt-[2rem]"
-            >
-              <Image
-                src={symbol4}
-                alt="water symbol"
-                className="rounded-full w-20"
-              />
-            </motion.div>
-            <motion.div
-              variants={item}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900"
-            >
-              <Image
-                src={symbol3}
-                alt="water symbol"
-                className="rounded-full w-20"
-              />
+              <motion.div
+                variants={item}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900 mt-[2rem]"
+              >
+                <Image
+                  src={symbol4}
+                  alt="water symbol"
+                  className="rounded-full w-20"
+                />
+              </motion.div>
+              <motion.div
+                variants={item}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="bg-[#090715] p-2 rounded-[1rem] border-2 border-gray-900"
+              >
+                <Image
+                  src={symbol3}
+                  alt="water symbol"
+                  className="rounded-full w-20"
+                />
+              </motion.div>
             </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );
