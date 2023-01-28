@@ -23,7 +23,7 @@ const Subscription = () => {
     )
 
     return (
-        <div className='flex flex-col items-center justify-center py-32  w-full '>
+        <div className='flex flex-col items-center justify-center py-32  w-full  '>
             <div className='absolute bg-black'>
                 <Image src={bg} alt="bg" className=' w-full h-full object-cover opacity-20' />
             </div>
@@ -33,7 +33,7 @@ const Subscription = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut' }}
                 >
-                    <h1 className='text-6xl text-white font-medium'>Discover a world of incredible <br />
+                    <h1 className='text-6xl text-white font-bold'>Discover a world of incredible <br />
                         gaming experience now</h1>
                     <p className='text-white text-lg my-5'>Choose from three subscription plan options to get monthly  <br /> benefits and decks, that suit your gaming style.</p>
                 </motion.div>
@@ -45,7 +45,7 @@ const Subscription = () => {
                         initial={{ y: "50%", opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: .8, ease: 'easeInOut' }}
-                        className='bg-[#231942] p-2 w-[20em] rounded-2xl'>
+                        className='bg-[#191230] p-2 w-[20em] rounded-2xl border-2 border-[#342661]'>
                         <div>
                             <CardHeader
                                 type="Essential"
@@ -83,10 +83,10 @@ const Subscription = () => {
                     {/* Extra */}
                     <motion.div
                         initial={{ y: "60%", opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
 
-                        className='bg-[#674BD8] w-[20em] p-2 rounded-2xl scale-110'>
+                        className='bg-[#472ea9] w-[20em] p-2 rounded-2xl '>
                         <div className='bg-white rounded-xl' >
                             <CardHeader
                                 type="Extra"
@@ -125,7 +125,7 @@ const Subscription = () => {
                         initial={{ y: "65%", opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.3, ease: "easeInOut" }}
-                        className='bg-[#231942] w-[20em] p-2  rounded-2xl'>
+                        className='bg-[#191230] w-[20em] p-2  rounded-2xl border-2 border-[#342661]'>
                         <div>
                             <CardHeader
                                 type="Deluxe"
