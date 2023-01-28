@@ -52,7 +52,7 @@ const Subscription = () => {
                                 price="14.99"
                                 text="Billed every 1 Month. Cancel any time."
                                 color="white"
-                                bg="#674BD8"
+                                bg="#472ea9"
                             />
                         </div>
 
@@ -93,7 +93,7 @@ const Subscription = () => {
                                 price="14.99"
                                 text="Save $12 per year."
                                 color="black"
-                                bg="#"
+                                bg=""
                             />
                         </div>
                         <ul className='flex flex-col items-start  gap-2 px-3 py-5'>
@@ -132,7 +132,7 @@ const Subscription = () => {
                                 price="12.99"
                                 text="Save $24 per year."
                                 color="white"
-                                bg="#674BD8"
+                                bg="#472ea9"
 
                             />
                         </div>
