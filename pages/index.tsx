@@ -4,6 +4,7 @@ import Image from "next/image";
 import CardSection from "../components/CardSection";
 import MainScreen from "../components/MainScreen";
 import { Navbar } from "../components/Navbar";
+import Subscription from "../components/Subscription";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Navbar />
       <MainScreen />
       <CardSection />
+      <Subscription />
     </div>
   );
 };
