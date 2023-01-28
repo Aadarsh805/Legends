@@ -5,8 +5,8 @@ interface CustomDeckSectionProps {}
 
 const CustomDeckSection: FC<CustomDeckSectionProps> = ({}) => {
   return (
-    <div className="bg-black py-32">
-      <div className="py-32 px-24 mx-52 bg-[url('../public/deck-bg.png')] bg-no-repeat bg-cover bg-center overflow-hidden rounded-xl text-gray-200">
+    <div className="bg-black h-screen flex justify-center items-center">
+      <div className="bg-[url('../public/deck-bg.png')] bg-no-repeat bg-cover bg-center overflow-hidden rounded-xl text-gray-200 w-[60vw] p-[5rem]">
         <motion.div
           className="flex flex-col gap-5 w-fit "
           initial="hidden"

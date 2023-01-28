@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.sub_list{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-    font-size: 15px;
-    
+.sub_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 15px;
 }
 
-
-hr{
-    width: 100%;
-    opacity: .10;
+hr {
+  width: 100%;
+  opacity: 0.1;
 }

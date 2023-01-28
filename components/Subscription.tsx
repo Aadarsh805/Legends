@@ -1,32 +1,39 @@
-import React from 'react'
-import bg from "public/bg.jpg"
-import Image from 'next/image'
-import { AiOutlineCheck } from 'react-icons/ai'
-import { easeInOut, motion } from 'framer-motion'
+import React from "react";
+import bg from "public/bg.jpg";
+import Image from "next/image";
+import { AiOutlineCheck } from "react-icons/ai";
+import { easeInOut, motion } from "framer-motion";
 
 const Subscription = () => {
+  interface Props {
+    type: string;
+    price: string;
+    text: string;
+    color: string;
+    bg: string;
+  }
 
-    interface Props {
-        type: string;
-        price: string;
-        text: string;
-        color: string
-        bg: string
-    }
+  const CardHeader = ({ type, price, text, color, bg }: Props) => (
+    <div
+      className={`bg-[${bg}] text-white flex flex-col items-start px-4 py-4 rounded-xl`}
+    >
+      <h1 className="text-[#ffe203] text-xl mb-3 font-semibold">{type}</h1>
+      <p
+        className={`text-${color} font-semibold mb-[2px]`}
+      >{`1 Month - $${price}/month`}</p>
+      <p className={`text-[#b8b5b5] text-sm`}>{text}</p>
+    </div>
+  );
 
-    const CardHeader = ({ type, price, text, color, bg }: Props) => (
-        <div className={`bg-[${bg}] text-white flex flex-col items-start px-4 py-4 rounded-xl`}>
-            <h1 className='text-[#ffe203] text-xl mb-3 font-semibold'>{type}</h1>
-            <p className={`text-${color} font-semibold mb-[2px]`}>{`1 Month - $${price}/month`}</p>
-            <p className={`text-[#b8b5b5] text-sm`}>{text}</p>
-        </div>
-    )
-
-    return (
-        <div className='flex flex-col items-center justify-center py-32  w-full  '>
-            <div className='absolute bg-black'>
-                <Image src={bg} alt="bg" className=' w-full h-full object-cover opacity-20' />
-            </div>
+  return (
+    <div className="flex flex-col items-center justify-center py-32  w-full  ">
+      <div className="absolute bg-black">
+        <Image
+          src={bg}
+          alt="bg"
+          className=" w-full h-full object-cover opacity-20"
+        />
+      </div>
             <div className='z-30 flex flex-col items-center justify-center gap-3  text-center  '>
                 <motion.div
                     initial={{ y: '-50%', opacity: 0 }}
@@ -157,12 +164,11 @@ const Subscription = () => {
                             <hr />
                             <li className='sub_list text-[#e2e2e2]'  ><AiOutlineCheck style={{ color: '#ffe203' }} /> Monthly  Card Packs</li>
                         </ul>
-
                     </motion.div>
                 </div>
             </div>
-        </div>
-    )
-}
+          </div>
+  );
+};
 
-export default Subscription
+export default Subscription;

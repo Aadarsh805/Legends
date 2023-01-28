@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import CardSection from "../components/CardSection";
 import CustomDeckSection from "../components/CustomDeckSection";
+import Footer from "../components/Footer";
 import MainScreen from "../components/MainScreen";
 import { Navbar } from "../components/Navbar";
 import Subscription from "../components/Subscription";
@@ -13,9 +14,9 @@ const Home: NextPage = () => {
       <Navbar />
       <MainScreen />
       <CardSection />
-
-      <Subscription />
       <CustomDeckSection />
+      <Subscription />
+      <Footer />
     </div>
   );
 };
