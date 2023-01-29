@@ -2,7 +2,7 @@ import React from 'react'
 import bg from "public/bg.jpg"
 import Image from 'next/image'
 import { AiOutlineCheck } from 'react-icons/ai'
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Subscription = () => {
 
@@ -85,7 +85,6 @@ const Subscription = () => {
                         initial={{ y: "60%", opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
-
                         className='bg-[#472ea9] w-[20em] p-2 rounded-2xl '>
                         <div className='bg-white rounded-xl' >
                             <CardHeader
