@@ -4,6 +4,7 @@ import Image from "next/image";
 import CardSection from "../components/CardSection";
 import CustomDeckSection from "../components/CustomDeckSection";
 import EpicBackground from "../components/EpicBackground";
+import Footer from "../components/Footer";
 import MainScreen from "../components/MainScreen";
 import { Navbar } from "../components/Navbar";
 import Subscription from "../components/Subscription";
@@ -14,9 +15,10 @@ const Home: NextPage = () => {
       <Navbar />
       <MainScreen />
       <CardSection />
-      <Subscription />
       <CustomDeckSection />
+      <Subscription />
       <EpicBackground />
+      <Footer />
     </div>
   );
 };
